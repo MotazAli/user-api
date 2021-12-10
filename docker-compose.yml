@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  redis_service:
+    image: 'redis:alpine'
+  auth_node_service:
+    build: .
+    depends_on:
+      - redis_service
+    ports:
+      - '3000:3000'

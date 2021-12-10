@@ -1,0 +1,15 @@
+# if you want to run the docker compose
+docker-compose up      
+
+# if you want to run the docker compose 
+# and want to rebuild a new image for your container. 
+# Basically, this is for a case where you have made some changes 
+# to your application code and want to rebuild the images.
+docker-compose up --build
+
+
+# if you want start up in the background and control returns to the terminal.
+docker-compose up -d
+
+# if you want to stop docker compose
+docker-compose down
